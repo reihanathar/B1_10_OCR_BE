@@ -25,3 +25,5 @@ app.use("/", () => {
         message: "Welcome to the OCR API"
     });
 });
+
+module.exports = app;
