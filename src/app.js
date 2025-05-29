@@ -21,7 +21,7 @@ app.use((err, req, res, next) => {
     });
 });
 
-app.use("/", (req, res) => {
+app.use("/", () => {
     res.status(200).json({
         success: true,
         message: "Welcome to the OCR API"
