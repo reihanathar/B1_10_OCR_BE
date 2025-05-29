@@ -20,3 +20,10 @@ app.use((err, req, res, next) => {
         message: 'Internal server error'
     });
 });
+
+app.use("/", (req, res) => {
+    res.status(200).json({
+        success: true,
+        message: "Welcome to the OCR API"
+    });
+});
