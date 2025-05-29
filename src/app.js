@@ -19,10 +19,11 @@ app.use((err, req, res, next) => {
     });
 });
 
-app.use("/", (req, res) => {
-    res.status(200).json({
-        success: true,
-        message: "Welcome to the API"
+app.get('/', (req, res) => {
+    res.json({
+        message: 'Welcome to OCR API',
+        status: 'Server is running',
+        version: '1.0.0'
     });
 });
 
